@@ -93,4 +93,33 @@ body {
     background-color: var(--color-primary); 
     border: none;
     border-radius: 4px;
-    transition: all 0.3s
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+#searchBtn:hover {
+    background-color: #33FFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px var(--color-primary);
+}
+
+/* Estilos de la galería de imágenes (SOLUCIÓN CON FLEXBOX) */
+.gallery-grid {
+    display: flex; /* Usamos Flexbox para garantizar la disposición horizontal */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px;
+    margin-top: 30px;
+    /* Ajustes para el ancho de la tarjeta en Flexbox */
+}
+
+.image-card {
+    /* Define un ancho que permita varias imágenes por fila */
+    flex-basis: 220px; 
+    flex-grow: 1; /* Permite que se estire un poco si hay espacio */
+    max-width: 300px; /* Limita el tamaño máximo */
+    
+    background-color
