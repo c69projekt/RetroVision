@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroVision - Buscador de Imágenes Unsplash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="glitch" data-text="RetroVision">RetroVision</h1>
+            <p class="subtitle">Análisis de Estética Retro-Futurista | API Unsplash</p>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Introduce término de búsqueda (ej. 'cibernético', 'planeta retro', 'vector 80s')... ">
+            <button id="searchBtn"><i class="fas fa-search"></i> Iniciar Búsqueda</button>
+        </div>
+
+        <div id="imageGallery" class="gallery-grid">
+            </div>
+
+        <button id="loadMoreBtn" style="display: none;"><i class="fas fa-arrow-down"></i> Cargar 20 imágenes más</button>
+        
+        <div id="status" class="status-message">Conectado. Esperando comando.</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
